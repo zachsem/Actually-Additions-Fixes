@@ -32,4 +32,4 @@ What did you expect to happen?
 
 ## Logs
 
-Attach \`latest.log\` or the relevant crash report.
+Attach `latest.log` or the relevant crash report.
