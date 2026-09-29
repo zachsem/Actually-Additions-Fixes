@@ -1,0 +1,14 @@
+[
+  {
+    "modid": "actuallyadditionsfixes",
+    "name": "Actually Additions Fixes",
+    "description": "Unofficial fixes for Actually Additions r152 on Minecraft 1.12.2.",
+    "version": "\${version}",
+    "mcversion": "1.12.2",
+    "authorList": ["zachsem"],
+    "credits": "",
+    "logoFile": "",
+    "url": "",
+    "updateUrl": ""
+  }
+]
