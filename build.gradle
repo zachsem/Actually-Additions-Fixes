@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    def mixin = "zone.rong:mixinbooter:\${mixin_booter_version}"
+    def mixin = "zone.rong:mixinbooter:${mixin_booter_version}"
 
     implementation(mixin) {
         transitive = false
@@ -55,7 +55,7 @@ processResources {
 }
 
 jar {
-    archiveFileName = "\${archives_base_name}-\${project.version}.jar"
+    archiveFileName = "${archives_base_name}-${project.version}.jar"
     manifest {
         attributes(
                 'MixinConfigs': 'mixins.actuallyadditionsfixes.json'
