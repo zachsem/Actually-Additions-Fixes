@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.zachsem.actuallyadditionsfixes.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinRecipeBioMash",
+    "MixinTileEntityPhantomPlacer"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
