@@ -21,8 +21,8 @@ Test order:
 
 Observed with the temporary AA Event Probe:
 
-- Manual break: \`BreakEvent\` + \`HarvestDropsEvent\` fired.
-- Regular Auto-Breaker: \`BreakEvent\` + \`HarvestDropsEvent\` fired.
+- Manual break: `BreakEvent` + `HarvestDropsEvent` fired.
+- Regular Auto-Breaker: `BreakEvent` + `HarvestDropsEvent` fired.
 - Phantom Breaker: neither event fired, while the block itself was broken successfully.
 
 Result: issue #1322 confirmed on r152.
@@ -33,7 +33,7 @@ Confirmed in single-player:
 
 - Manual break still fires the expected Forge events.
 - Regular Auto-Breaker still fires the expected Forge events.
-- Phantom Breaker now fires \`BreakEvent\` and \`HarvestDropsEvent\` once for an actual block break.
+- Phantom Breaker now fires `BreakEvent` and `HarvestDropsEvent` once for an actual block break.
 - Leaving the Phantom Breaker linked to air does not generate repeated synthetic break/harvest events.
 - The Phantom Breaker continues to break its target normally.
 
@@ -49,14 +49,14 @@ Confirmed on a dedicated Forge 14.23.5.2864 server with Universal Tweaks 1.21.0 
 
 Not separately exercised as dedicated test cases:
 
-- A third-party \`BreakEvent\` listener explicitly cancelling the event.
-- A third-party \`HarvestDropsEvent\` listener rewriting the drop list.
+- A third-party `BreakEvent` listener explicitly cancelling the event.
+- A third-party `HarvestDropsEvent` listener rewriting the drop list.
 
-The patch uses Actually Additions' own \`WorldUtil.fireFakeHarvestEventsForDropChance\` helper, the same event helper used by its regular Auto-Breaker.
+The patch uses Actually Additions' own `WorldUtil.fireFakeHarvestEventsForDropChance` helper, the same event helper used by its regular Auto-Breaker.
 
 ## BioMash — unpatched baseline
 
-A temporary test helper changed Actually Additions' \`item_misc\` maximum stack size from 64 to 16.
+A temporary test helper changed Actually Additions' `item_misc` maximum stack size from 64 to 16.
 
 Without Actually Additions Fixes installed, the unpatched BioMash recipe continued to produce outputs larger than the item's real 16-item stack limit, confirming that r152 uses its hard-coded 64 ceiling.
 
