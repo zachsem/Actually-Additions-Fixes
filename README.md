@@ -2,6 +2,12 @@
 
 Unofficial fixes for **Actually Additions r152** on **Minecraft 1.12.2**.
 
+## Official download
+
+Installable releases are published on **CurseForge**:
+
+**[Download Actually Additions Fixes on CurseForge](https://www.curseforge.com/minecraft/mc-mods/actually-additions-fixes)**
+
 ## Fixes in 1.0.0
 
 ### BioMash stack limit
@@ -49,7 +55,7 @@ The normal release artifact is the JAR in `build/libs`.
 
 ## Reporting issues
 
-Please use GitHub Issues and include the Minecraft version, Forge version, Actually Additions version, this mod's version, relevant optional mods, reproduction steps, and a log or crash report when applicable.
+Please use [GitHub Issues](https://github.com/zachsem/Actually-Additions-Fixes/issues) and include the Minecraft version, Forge version, Actually Additions version, this mod's version, relevant optional mods, reproduction steps, and a log or crash report when applicable.
 
 ## License
 
