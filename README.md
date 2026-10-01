@@ -39,7 +39,14 @@ Both the client and dedicated server need the mod and its required dependencies.
 
 ## Validation
 
-The included fixes were reproduced and tested in single-player and on a dedicated server. Testing included Forge 14.23.5.2859 and 14.23.5.2864 and compatibility with Universal Tweaks 1.21.0.
+The included fixes were reproduced and tested in single-player and on a dedicated server.
+
+Last tested successfully on:
+
+- Forge 14.23.5.2859 (**Recommended**)
+- Forge 14.23.5.2864 (**Latest at time of testing**)
+
+Compatibility with Universal Tweaks 1.21.0 was also tested.
 
 See [`docs/VALIDATION.md`](docs/VALIDATION.md) for the detailed test record.
 
