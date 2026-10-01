@@ -1,0 +1,40 @@
+name: Fix request
+description: Suggest another small Actually Additions 1.12.2 bug or compatibility fix
+title: "[Request]: "
+labels:
+  - "type: enhancement"
+  - "status: needs triage"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the bug or compatibility issue you want fixed.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link an upstream issue, reproducible report, or other evidence when available.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Explain how the issue can be reproduced on Actually Additions r152.
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: Existing fixes
+      description: If you know of another maintained mod that already fixes this issue, link it here.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Before submitting
+      options:
+        - label: This request is a narrowly scoped Actually Additions 1.12.2 bug or compatibility fix.
+          required: true
+        - label: I checked existing issues for the same request.
+          required: true
